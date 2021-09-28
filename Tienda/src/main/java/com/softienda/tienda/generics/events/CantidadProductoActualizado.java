@@ -1,7 +1,7 @@
-package com.softienda.tienda.generics.globalevents;
+package com.softienda.tienda.generics.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
+import com.softienda.tienda.generics.values.CantidadProducto;
 
 public class CantidadProductoActualizado extends DomainEvent {
     private final CantidadProducto cantidad;

@@ -1,4 +1,4 @@
-package com.softienda.tienda.generics.globalvalues;
+package com.softienda.tienda.generics.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 

@@ -1,4 +1,4 @@
-package com.softienda.tienda.factura.values;
+package com.softienda.tienda.generics.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
@@ -17,5 +17,18 @@ public class CostoTotal implements ValueObject<Double> {
     @Override
     public Double value() {
         return value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CostoTotal that = (CostoTotal) o;
+        return Objects.equals(value, that.value);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(value);
     }
 }

@@ -1,8 +1,8 @@
 package com.softienda.tienda.producto.commands;
 
 import co.com.sofka.domain.generic.Command;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
-import com.softienda.tienda.generics.globalvalues.Nombre;
+import com.softienda.tienda.generics.values.CantidadProducto;
+import com.softienda.tienda.generics.values.Nombre;
 import com.softienda.tienda.producto.values.Precio;
 import com.softienda.tienda.producto.values.ProductoID;
 

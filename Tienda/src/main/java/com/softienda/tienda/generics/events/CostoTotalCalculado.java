@@ -1,11 +1,7 @@
-package com.softienda.tienda.factura.events;
+package com.softienda.tienda.generics.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.softienda.tienda.factura.values.CostoTotal;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
-import com.softienda.tienda.producto.values.ProductoID;
-
-import java.util.List;
+import com.softienda.tienda.generics.values.CostoTotal;
 
 public class CostoTotalCalculado extends DomainEvent {
 

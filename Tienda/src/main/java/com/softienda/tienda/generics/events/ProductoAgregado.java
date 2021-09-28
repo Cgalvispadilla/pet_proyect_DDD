@@ -1,4 +1,4 @@
-package com.softienda.tienda.factura.events;
+package com.softienda.tienda.generics.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.softienda.tienda.producto.values.ProductoID;

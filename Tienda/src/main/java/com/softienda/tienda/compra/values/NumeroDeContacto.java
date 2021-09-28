@@ -1,22 +1,21 @@
-package com.softienda.tienda.generics.globalvalues;
+package com.softienda.tienda.compra.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class CantidadProducto implements ValueObject<Integer> {
+public class NumeroDeContacto implements ValueObject<String> {
+    private final String value;
 
-    private final Integer value;
-
-    public CantidadProducto(Integer value) {
+    public NumeroDeContacto(String value) {
         this.value = Objects.requireNonNull(value);
-        if(this.value<=0){
-            throw new IllegalArgumentException("La cantidad no puede ser 0 o menor a 0");
+        if(this.value.isBlank()){
+            throw new IllegalArgumentException("El numero de contacto no debe estar vacio");
         }
     }
 
     @Override
-    public Integer value() {
+    public String value() {
         return value;
     }
 
@@ -24,7 +23,7 @@ public class CantidadProducto implements ValueObject<Integer> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CantidadProducto that = (CantidadProducto) o;
+        NumeroDeContacto that = (NumeroDeContacto) o;
         return Objects.equals(value, that.value);
     }
 

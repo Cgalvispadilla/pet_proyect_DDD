@@ -2,9 +2,9 @@ package com.softienda.tienda.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
 import com.softienda.tienda.factura.values.EmpleadoID;
-import com.softienda.tienda.generics.globalvalues.Email;
-import com.softienda.tienda.generics.globalvalues.Nombre;
-import com.softienda.tienda.generics.globalvalues.NumeroCelular;
+import com.softienda.tienda.generics.values.Email;
+import com.softienda.tienda.generics.values.Nombre;
+import com.softienda.tienda.generics.values.NumeroCelular;
 
 public class ActualizarEmpleado extends Command {
     private final EmpleadoID entityId;

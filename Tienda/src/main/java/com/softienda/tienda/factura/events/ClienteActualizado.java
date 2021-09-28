@@ -2,10 +2,10 @@ package com.softienda.tienda.factura.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.softienda.tienda.factura.Cliente;
-import com.softienda.tienda.generics.globalvalues.Direccion;
-import com.softienda.tienda.generics.globalvalues.Email;
-import com.softienda.tienda.generics.globalvalues.Nombre;
-import com.softienda.tienda.generics.globalvalues.NumeroCelular;
+import com.softienda.tienda.generics.values.Direccion;
+import com.softienda.tienda.generics.values.Email;
+import com.softienda.tienda.generics.values.Nombre;
+import com.softienda.tienda.generics.values.NumeroCelular;
 
 public class ClienteActualizado extends DomainEvent {
     private final Cliente entityId;

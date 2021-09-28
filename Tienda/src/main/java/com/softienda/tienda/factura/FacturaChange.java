@@ -1,11 +1,10 @@
 package com.softienda.tienda.factura;
 
 import co.com.sofka.domain.generic.EventChange;
-import com.softienda.tienda.factura.commands.AgregarProducto;
 import com.softienda.tienda.factura.events.*;
-import com.softienda.tienda.generics.globalevents.CantidadProductoActualizado;
-import com.softienda.tienda.producto.Producto;
-import com.softienda.tienda.producto.values.Precio;
+import com.softienda.tienda.generics.events.CantidadProductoActualizado;
+import com.softienda.tienda.generics.events.CostoTotalCalculado;
+import com.softienda.tienda.generics.events.ProductoAgregado;
 
 public class FacturaChange extends EventChange {
     public FacturaChange(Factura factura) {

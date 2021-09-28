@@ -4,10 +4,12 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import com.softienda.tienda.factura.events.*;
 import com.softienda.tienda.factura.values.EmpleadoID;
-import com.softienda.tienda.generics.globalvalues.*;
-import com.softienda.tienda.generics.globalevents.CantidadProductoActualizado;
+import com.softienda.tienda.generics.events.CostoTotalCalculado;
+import com.softienda.tienda.generics.events.ProductoAgregado;
+import com.softienda.tienda.generics.values.*;
+import com.softienda.tienda.generics.events.CantidadProductoActualizado;
 import com.softienda.tienda.producto.values.ProductoID;
-import com.softienda.tienda.factura.values.CostoTotal;
+import com.softienda.tienda.generics.values.CostoTotal;
 import com.softienda.tienda.factura.values.FacturaID;
 import com.softienda.tienda.factura.values.Fecha;
 

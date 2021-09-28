@@ -2,10 +2,10 @@ package com.softienda.tienda.producto;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import com.softienda.tienda.generics.globalevents.CantidadProductoActualizado;
-import com.softienda.tienda.generics.globalevents.NombreActualizado;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
-import com.softienda.tienda.generics.globalvalues.Nombre;
+import com.softienda.tienda.generics.events.CantidadProductoActualizado;
+import com.softienda.tienda.generics.events.NombreActualizado;
+import com.softienda.tienda.generics.values.CantidadProducto;
+import com.softienda.tienda.generics.values.Nombre;
 import com.softienda.tienda.producto.events.*;
 import com.softienda.tienda.producto.values.CategoriaID;
 import com.softienda.tienda.producto.values.Precio;

@@ -1,8 +1,8 @@
 package com.softienda.tienda.producto.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
-import com.softienda.tienda.generics.globalvalues.Nombre;
+import com.softienda.tienda.generics.values.CantidadProducto;
+import com.softienda.tienda.generics.values.Nombre;
 import com.softienda.tienda.producto.values.Precio;
 
 public class ProductoCreado extends DomainEvent {

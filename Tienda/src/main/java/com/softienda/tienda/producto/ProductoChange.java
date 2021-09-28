@@ -1,8 +1,8 @@
 package com.softienda.tienda.producto;
 
 import co.com.sofka.domain.generic.EventChange;
-import com.softienda.tienda.generics.globalevents.CantidadProductoActualizado;
-import com.softienda.tienda.generics.globalevents.NombreActualizado;
+import com.softienda.tienda.generics.events.CantidadProductoActualizado;
+import com.softienda.tienda.generics.events.NombreActualizado;
 import com.softienda.tienda.producto.events.*;
 
 import java.util.HashSet;

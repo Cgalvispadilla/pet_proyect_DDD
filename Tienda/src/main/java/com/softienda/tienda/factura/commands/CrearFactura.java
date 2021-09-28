@@ -3,10 +3,10 @@ package com.softienda.tienda.factura.commands;
 import co.com.sofka.domain.generic.Command;
 import com.softienda.tienda.factura.Cliente;
 import com.softienda.tienda.factura.Empleado;
-import com.softienda.tienda.factura.values.CostoTotal;
+import com.softienda.tienda.generics.values.CostoTotal;
 import com.softienda.tienda.factura.values.FacturaID;
 import com.softienda.tienda.factura.values.Fecha;
-import com.softienda.tienda.generics.globalvalues.CantidadProducto;
+import com.softienda.tienda.generics.values.CantidadProducto;
 import com.softienda.tienda.producto.values.ProductoID;
 
 public class CrearFactura extends Command {
