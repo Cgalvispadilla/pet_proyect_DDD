@@ -2,6 +2,8 @@ package com.softienda.tienda.producto;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import com.softienda.tienda.generics.globalevents.CantidadProductoActualizado;
+import com.softienda.tienda.generics.globalevents.NombreActualizado;
 import com.softienda.tienda.generics.globalvalues.CantidadProducto;
 import com.softienda.tienda.generics.globalvalues.Nombre;
 import com.softienda.tienda.producto.events.*;
@@ -66,6 +68,11 @@ public class Producto extends AggregateEvent<ProductoID> {
         Objects.requireNonNull(precio);
         appendChange(new precioActualizado(precio)).apply();
     }
+    public Optional<Categoria> getCategoriaPorId(CategoriaID categoriaID) {
+        return categorias().stream()
+                .filter(categoria -> categoria.identity().equals(categoriaID))
+                .findFirst();
+    }
 
     public Nombre nombre() {
         return nombre;
@@ -83,9 +90,5 @@ public class Producto extends AggregateEvent<ProductoID> {
         return categorias;
     }
 
-    public Optional<Categoria> getCategoriaPorId(CategoriaID categoriaID) {
-        return categorias().stream()
-                .filter(categoria -> categoria.identity().equals(categoriaID))
-                .findFirst();
-    }
+
 }

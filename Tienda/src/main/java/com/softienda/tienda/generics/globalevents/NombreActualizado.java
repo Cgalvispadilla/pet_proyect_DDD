@@ -1,4 +1,4 @@
-package com.softienda.tienda.producto.events;
+package com.softienda.tienda.generics.globalevents;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import com.softienda.tienda.generics.globalvalues.Nombre;
